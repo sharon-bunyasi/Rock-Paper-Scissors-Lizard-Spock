@@ -27,3 +27,33 @@ body {
     width: 100%;
     max-width: 500px;
 }
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-family: lemon, sans-serif;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.game-button {
+    display: grid;
+    grid-template-columns: auto-fit, minmax(100px,1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/*style for each choice button*/
+button.choice {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    background-color: #444c60;
+    color: azure;
+}

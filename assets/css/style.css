@@ -17,3 +17,13 @@ body {
     text-align: center;
     font-family: serif, sans-serif;
 }
+
+/*main box holding the whole game interface*/
+.container{
+    background-color: honeydew;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: 500px;
+}

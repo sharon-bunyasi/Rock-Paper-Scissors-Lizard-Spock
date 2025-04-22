@@ -8,7 +8,7 @@
 
 /* set the body to center everything in the middle of the screen*/
 body {
-    background-color: yellowgreen;
+    background-color: darkolivegreen;
     color: #000;
     display: flex;
     align-items: center;
@@ -61,4 +61,24 @@ button.choice {
 /*hover effect to highlight the buttons when hovered*/
 button.choice:hover{
     background-color: black;
+}
+
+/*style for the message*/
+.message {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-family: sans-serif, serif;
+}
+
+/*style for the reset game button*/
+#reset {
+    background-color: #ff5e5e;
+    padding: 10px 15px;
+    border: none;
+    font-size: 1rem;
+    color: azure;
+    cursor: pointer;
+}
+#reset:hover {
+    background-color: red;
 }

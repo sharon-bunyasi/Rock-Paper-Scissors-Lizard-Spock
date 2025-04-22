@@ -57,3 +57,8 @@ button.choice {
     background-color: #444c60;
     color: azure;
 }
+
+/*hover effect to highlight the buttons when hovered*/
+button.choice:hover{
+    background-color: black;
+}

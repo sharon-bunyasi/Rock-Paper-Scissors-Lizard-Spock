@@ -12,6 +12,7 @@ body {
     color: #000;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     padding: 20px;
     text-align: center;
@@ -40,6 +41,13 @@ h1 {
     font-size: 1.2rem;
 }
 
+.choices-display {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-family: sans-serif, serif;
+}
 .game-button {
     display: grid;
     grid-template-columns: auto-fit, minmax(100px,1fr);
@@ -52,6 +60,7 @@ button.choice {
     padding: 10px;
     font-size: 1rem;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s ease;
     background-color: #444c60;
@@ -75,10 +84,21 @@ button.choice:hover{
     background-color: #ff5e5e;
     padding: 10px 15px;
     border: none;
+    border-radius: 8px;
     font-size: 1rem;
     color: azure;
     cursor: pointer;
 }
 #reset:hover {
     background-color: red;
+}
+
+/*smaller screen styles*/
+@media(max-width:500px) {
+    .game-button{
+        grid-template-columns: 1fr 1fr;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
 }

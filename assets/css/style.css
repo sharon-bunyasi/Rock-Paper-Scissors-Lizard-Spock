@@ -8,8 +8,8 @@
 
 /* set the body to center everything in the middle of the screen*/
 body {
-    background-color: darkolivegreen;
-    color: #000;
+    background-color: #1e1e2f;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@ body {
 
 /*main box holding the whole game interface*/
 .container{
-    background-color: honeydew;
+    background-color: #2c2c3e;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0,0,0,0.4);
@@ -64,12 +64,12 @@ button.choice {
     cursor: pointer;
     transition: background-color 0.2s ease;
     background-color: #444c60;
-    color: azure;
+    color: #fff;
 }
 
 /*hover effect to highlight the buttons when hovered*/
 button.choice:hover{
-    background-color: black;
+    background-color: #646cff;
 }
 
 /*style for the message*/
@@ -90,7 +90,7 @@ button.choice:hover{
     cursor: pointer;
 }
 #reset:hover {
-    background-color: red;
+    background-color: #e84a4a;
 }
 
 /*smaller screen styles*/

@@ -50,7 +50,7 @@ h1 {
 }
 .game-button {
     display: grid;
-    grid-template-columns: auto-fit, minmax(100px,1fr);
+    grid-template-columns: minmax(100px,1fr);
     gap: 15px;
     margin-bottom: 20px;
 }

@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 //DOM elements
 let button = document.querySelectorAll('.choice');
 let resultMessage = document.getElementById('result-message');

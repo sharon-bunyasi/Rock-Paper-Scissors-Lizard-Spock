@@ -9,3 +9,11 @@ let computerChoiceDisplay = document.getElementById('computer-choice');
 let choices = ['rock','paper','scissors','lizard','spock'];
 let playerScore = 0;
 let computerScore = 0;
+
+//Game logic functions
+
+//functions to get a random choice for the comouter
+function getComuterChoice() {
+    let randomIndex = Math.floor(Math.random()*choices.lenght);
+    return choices[randomIndex];
+}

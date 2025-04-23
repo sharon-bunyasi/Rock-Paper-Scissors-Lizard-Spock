@@ -17,3 +17,19 @@ function getComuterChoice() {
     let randomIndex = Math.floor(Math.random()*choices.lenght);
     return choices[randomIndex];
 }
+
+//function to determin the winner
+function determineWinner(player, comuter){
+    if (player === computer) {
+        return "it's a draw!";
+    }
+     
+//all winning conditions for player
+let wins = {
+    rock:['scissors','lizard'],
+    paper:['rock','spock'],
+    scissors:['paper','lizard'],
+    lizard:['spock','paper'],
+    spock:['scissors','rock'],
+};
+}

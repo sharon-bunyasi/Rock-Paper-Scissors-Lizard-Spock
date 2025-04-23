@@ -77,3 +77,11 @@ buttons.forEach(button =>{
 
     });
 });
+
+//Reset game
+resetButton.addEventListener('click', () => {
+    playerScore = 0;
+    computerScore = 0;
+    updateScores();
+    resultMessage.textContent = "Choose your move to start the game!";
+});

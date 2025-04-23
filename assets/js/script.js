@@ -32,4 +32,25 @@ let wins = {
     lizard:['spock','paper'],
     spock:['scissors','rock'],
 };
+
+//how do diplay when the player wins or loose
+if (wins[player].includes(computer)){
+    playerScore++;
+    return `You win!${capitalize(player)} beats ${capitalize(comuter)}.`;
+}else{
+    comuterScore++;
+    return `You lose!${capitalize(computer)} beats ${capitalize(player)}.`;
+}
+}
+
+//format choice functions display using font awesome icons
+function formatChoice(choice) {
+    let iconMap = {
+        rock: '<i class="fa-solid fa-hand-back-fist"></i>',
+        paper:'<i class="fa-solid fa-hand"></i>',
+        scissors:'<i class="fa-solid fa-hand-scissors"></i>',
+        lizard:'<i class="fa-solid fa-hand-lizard"></i>',
+        spock:'<i class="fa-solid fa-hand-spock"></i>',
+    };
+    return iconMap[choice] || capitalize(choice);
 }

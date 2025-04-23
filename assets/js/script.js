@@ -54,3 +54,26 @@ function formatChoice(choice) {
     };
     return iconMap[choice] || capitalize(choice);
 }
+
+//functions to update the score display
+function updateScores(){
+    playerScoreDisplay.textContent = playerScore;
+    computerScoreDisplay.textContent = computerScore;
+}
+
+//Event listeners
+buttons.forEach(button =>{
+    button.addEventListener('click', () => {
+        let playerChoice = button.getAttribute('data-choice');
+        let computerChoice = getComuterChoice();
+
+        //show choices
+        playerChoiceDisplay.innerHTML = formatChoice(playerChoice);
+        computerChoiceDisplay.innerHTML = formatChoice(computerChoice);
+
+        let result = determineWinner(playerChoice, computerChoice);
+        resultMessage.textContent = result;
+        updateScores();
+
+    });
+});
